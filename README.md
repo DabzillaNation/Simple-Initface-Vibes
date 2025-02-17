@@ -1,6 +1,6 @@
 # Simple-Initface-Vibes
 Super simple app.
-- Connects to Initface and activates vibe at on key/mouse press of your choice.
+- Connects to Initface and activates vibe on key/mouse press of your choice.
 - Works while minimized.
 - Can change intensity level.
 
