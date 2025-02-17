@@ -18,7 +18,7 @@ python AppV3.py
 ```
 
 ## To build (For windows):
-```
+``` bash
 python -m venv .venv  # Creates a folder named ".venv" #Creates virtual env
 .venv\Scripts\activate # Activates virtual env
 pip install -r requirements.txt # installs requirements
