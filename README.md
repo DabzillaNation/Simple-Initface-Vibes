@@ -24,6 +24,7 @@ python -m venv .venv  # Creates a folder named ".venv" #Creates virtual env
 pip install -r requirements.txt # installs requirements
 pip install pyinstaller # Installs builder
 pyinstaller --onefile --noconsole --name "IntifaceHapticApp" AppV3.py --add-data="./icon.ico;." # Builds app
+# The app will be in the dist folder, the build folder is just temp files you can delete
 ```
 
 # Notes:
