@@ -25,3 +25,6 @@ pip install -r requirements.txt # installs requirements
 pip install pyinstaller # Installs builder
 pyinstaller --onefile --noconsole --name "IntifaceHapticApp" AppV3.py --add-data="./icon.ico;." # Builds app
 ```
+
+# Notes:
+The AppV1 and V2 are just older worse versions of the app incase you wanted to see them for some reason.
