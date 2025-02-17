@@ -8,7 +8,7 @@ Super simple app.
 Download the executable from the releases tab on this page and just run it.
 It will show you instructions:
 ![image](https://github.com/user-attachments/assets/ca2fe19f-9b92-428e-bc4c-eca6e7956731)
-![image](https://github.com/user-attachments/assets/7ad68624-76cb-4be3-a68e-d8d9082d484e)
+![image](https://github.com/user-attachments/assets/f6c77986-b38d-40ca-b9a3-f8377f1cfc1c)
 ![image](https://github.com/user-attachments/assets/812460b9-aa02-449a-931c-737d6991b495)
 ![image](https://github.com/user-attachments/assets/af72058e-f2d6-44f0-ab1e-f15d6be8d8d3)
 ![image](https://github.com/user-attachments/assets/33bf3cd1-3387-4ef5-937a-5157e2e345be)
