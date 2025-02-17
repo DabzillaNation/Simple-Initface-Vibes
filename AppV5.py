@@ -206,7 +206,8 @@ class IntifaceApp:
     def increase_intensity(self, event=None):
         """Increases the vibration intensity by 0.1, up to a maximum of 1.0."""
         self.vibration_intensity = min(1.0, round(self.vibration_intensity + 0.1, 1))
-        self.status_label.config(text=f"Connected to: {self.device.name}\nIntensity:{self.vibration_intensity}")
+        if self.device:
+            self.status_label.config(text=f"Connected to: {self.device.name}\nIntensity:{self.vibration_intensity}")
         if self.vibrating:  # If already vibrating, update the vibration
              asyncio.run_coroutine_threadsafe(self.vibrate_task(self.vibration_intensity), self.event_loop)
 
@@ -214,7 +215,8 @@ class IntifaceApp:
     def decrease_intensity(self, event=None):
         """Decreases the vibration intensity by 0.1, down to a minimum of 0.0."""
         self.vibration_intensity = max(0.0, round(self.vibration_intensity - 0.1, 1))
-        self.status_label.config(text=f"Connected to: {self.device.name}\nIntensity:{self.vibration_intensity}")
+        if self.device:
+            self.status_label.config(text=f"Connected to: {self.device.name}\nIntensity:{self.vibration_intensity}")
         if self.vibrating:  # If already vibrating, update the vibration
             asyncio.run_coroutine_threadsafe(self.vibrate_task(self.vibration_intensity), self.event_loop)
 
@@ -314,6 +316,7 @@ class KeyRebindDialog(Toplevel):
 
         if key_type == "vibration":
             self.label = ttk.Label(self, text="Press the new key or choose a mouse button:", font=('Arial', 12))
+            self.label.pack(pady=20)
              # Mouse buttons
             self.mouse_button_frame = ttk.Frame(self)
             self.mouse_button_frame.pack()
@@ -328,10 +331,11 @@ class KeyRebindDialog(Toplevel):
             self.right_button.pack(side=tk.LEFT, padx=5)
         else:
             self.label = ttk.Label(self, text=f"Press the new key for {key_type.capitalize()}:", font=('Arial', 12))
+            self.label.pack(pady=20)
             self.mouse_button_frame = None
 
 
-        self.label.pack(pady=20)
+        
 
 
 
@@ -431,7 +435,8 @@ class IntensityDialog(Toplevel):
 
     def close_dialog(self):
         self.app.vibration_intensity = self.intensity_var.get()  # Update the main app's value
-        self.app.status_label.config(text=f"Connected to: {self.app.device.name}\nIntensity:{self.app.vibration_intensity}")
+        if self.app.device:
+            self.app.status_label.config(text=f"Connected to: {self.app.device.name}\nIntensity:{self.app.vibration_intensity}")
         self.destroy()
 
 def main():
