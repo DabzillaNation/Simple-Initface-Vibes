@@ -3,6 +3,12 @@ Connects to Initface and activates vibe at 100% on key/mouse press
 
 # Install Setup (Executable)
 Download the executable from the releases tab on this page and just run it.
+It will show you instructions:
+![image](https://github.com/user-attachments/assets/ca2fe19f-9b92-428e-bc4c-eca6e7956731)
+![image](https://github.com/user-attachments/assets/f85ae781-2412-4737-8bd2-68abb2c5a186)
+![image](https://github.com/user-attachments/assets/812460b9-aa02-449a-931c-737d6991b495)
+![image](https://github.com/user-attachments/assets/af72058e-f2d6-44f0-ab1e-f15d6be8d8d3)
+
 
 # Setup For Python Script
 If you don't trust a random exe file, you can install python, clone this repo, install the dependencies to look through the code and run it yourself 
