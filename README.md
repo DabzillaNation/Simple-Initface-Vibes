@@ -8,12 +8,12 @@ Download the executable from the releases tab on this page and just run it.
 If you don't trust a random exe file, you can install python, clone this repo, install the dependencies to look through the code and run it yourself 
 ## Install Dependencies (for python script)
 Only needed if you want to edit and work with the script on your own
-```
+```bash
 pip install -r requirements.txt
 ```
 ## Run Script
 Navigate the terminal to where you have the python script, then run:
-```
+```bash
 python AppV3.py
 ```
 
