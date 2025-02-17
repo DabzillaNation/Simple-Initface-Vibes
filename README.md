@@ -1,5 +1,8 @@
 # Simple-Initface-Vibes
-Connects to Initface and activates vibe at 100% on key/mouse press
+Super simple app.
+Connects to Initface and activates vibe at on key/mouse press of your choice.
+Works while minimized.
+Can change intensity level.
 
 # Install Setup (Executable)
 Download the executable from the releases tab on this page and just run it.
