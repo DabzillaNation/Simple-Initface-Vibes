@@ -23,7 +23,7 @@ pip install -r requirements.txt
 ## Run Script:
 Navigate the terminal to where you have the python script, then run:
 ```bash
-python AppV3.py
+python AppV5.py
 ```
 
 ## To build (For windows):
@@ -33,7 +33,7 @@ python -m venv .venv  # Creates a folder named ".venv" #Creates virtual env
 .venv\Scripts\activate # Activates virtual env
 pip install -r requirements.txt # installs requirements
 pip install pyinstaller # Installs builder
-pyinstaller --onefile --noconsole --name "IntifaceHapticApp" AppV3.py --icon="./icon.ico" # Builds app
+pyinstaller --onefile --noconsole --name "IntifaceHapticApp" AppV5.py --icon="./icon.ico" # Builds app
 # The app will be in the dist folder, the build folder is just temp files you can delete
 ```
 
