@@ -27,6 +27,7 @@ python AppV3.py
 ```
 
 ## To build (For windows):
+This is for generating the exe file
 ``` bash
 python -m venv .venv  # Creates a folder named ".venv" #Creates virtual env
 .venv\Scripts\activate # Activates virtual env
